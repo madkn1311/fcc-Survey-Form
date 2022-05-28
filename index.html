@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <div>
+      <h1 id="title">BIBLIOPHILE</h1>
+      <p id="description">
+        Please take this survey to improve our book collection.
+      </p>
+      <form id="survey-form">
+        <label for="name" id="name-label">Name</label>
+        <input type="text" id="name" placeholder="Enter your name" required />
+
+        <label for="email" id="email-label">E-mail</label>
+        <input
+          type="email"
+          id="email"
+          placeholder="Enter your email"
+          required
+        />
+
+        <label for="number" id="number-label">Number</label>
+        <input
+          type="number"
+          id="number"
+          min="0"
+          max="100"
+          placeholder="Enter your age"
+        />
+
+        <label for="dropdown">Choose your current role:</label>
+        <select name="dropdown" id="dropdown">
+          <option disabled selected value>Select an option</option>
+          <option value="student">Student</option>
+          <option value="Tecaher">Teacher</option>
+          <option value="general reader">General Reader</option>
+          <option value="other">Other</option>
+        </select>
+
+        <label for="radio-button">How often doyou visit the library?</label>
+        <br />
+
+        <label for="everday"
+          ><input
+            id="everday"
+            type="radio"
+            name="days"
+            value="everday"
+          />Everyday</label
+        ><br />
+
+        <label for="once a week"
+          ><input
+            id="once a week"
+            type="radio"
+            name="days"
+            value="everday"
+          />Once a week</label
+        ><br />
+
+        <label for="once a month"
+          ><input
+            id="once a month"
+            type="radio"
+            name="days"
+            value="everday"
+          />Once a month</label
+        ><br />
+
+        <label for="other"
+          ><input
+            id="other"
+            type="radio"
+            name="days"
+            value="everday"
+          />Other</label
+        ><br />
+        <br />
+
+        <label for="check-boxes"
+          >Which reading section would you like to be improved?</label
+        >
+        <br />
+
+        <label for="educational"
+          ><input
+            type="checkbox"
+            name="genre"
+            value="educational"
+          />Educational</label
+        ><br />
+
+        <label for="non-fiction"
+          ><input
+            type="checkbox"
+            name="genre"
+            value="non-fiction"
+          />Non-fiction</label
+        ><br />
+
+        <label for="fiction"
+          ><input type="checkbox" name="genre" value="fiction" />Fiction</label
+        ><br />
+
+        <label for="horror"
+          ><input
+            type="checkbox"
+            name="genre"
+            value="non-fiction"
+          />Horror</label
+        ><br />
+
+        <label for="romance"
+          ><input type="checkbox" name="genre" value="romance" />Romance</label
+        ><br />
+
+        <label for="mystery"
+          ><input type="checkbox" name="genre" value="mystery" />Mystery</label
+        ><br />
+
+        <label for="other"
+          ><input type="checkbox" name="genre" value="other" />Other</label
+        ><br />
+        <br />
+
+        <label for="suggestions">We value your suggestions...</label>
+
+        <textarea id="suggestions" name="suggestions"></textarea>
+
+        <button id="submit" type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
